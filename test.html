@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test doc while learning</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Sherman Gardens</h1>
+        <h3>What might you see in this yard and garden?</h3>
+    </header>
+    <div class="container">
+        <div class="center-box">
+            <h1>Flower 1</h1>
+            <p>Here is some subtext to expand</p>
+            <p>Learn more <a href="https://www.google.com">here</a></p>
+        </div>
+        <div class="center-box">
+            <h1>Flower 2</h1>
+            <p>Here is some subtext to expand</p>
+            <p>Learn more <a href="https://www.google.com">here</a></p>        
+        </div>
+        
+        <div>
+            <form method="POST">
+                <div>
+                    <label for="booking_date">Booking Date</label>
+                    <input type="date" id="booking_date" name="booking_date">
+                </div>
+                <div>
+                    <label for="booking_no">No. of People</label>
+                    <input type="range" id="booking_no" name="booking_no" min="1" max="10" value="4" oninput="this.nextElementSibling.value = this.value">
+                    <output>4</output>
+                </div>
+                <div>
+                    <label for="booking_location">Location</label>
+                    <input id="booking_location" name="booking_location" list="locations">
+                    <datalist id="locations">
+                        <option value="Downtown"></option>
+                        <option value="Uptown"></option>
+                    </datalist>
+                </div>
+                <button type="submit">
+                    Book table
+                </button>
+            </form>
+        </div>
+        
+        
+        
+        <h2>Hi there</h2>
+        <form>
+            <div>
+                <label for="user_first_name">First Name</label><br>
+                <input type="text" id="user_first_name" name="user_first_name">
+            </div>
+            <div>
+                <label for="user_last_name">Last Name</label><br>
+                <input type="text" id="user_last_name" name="user_last_name">
+            </div>
+            <div>
+                <label for="user_email">Email*</label><br>
+                <input type="email" id="user_email" name="user_email" required>
+            </div>
+            <div>
+                <label for="user_password">Password</label><br>
+                <input type="password" id="user_password" name="user_password"> 
+            </div>
+            <div>
+                <label for="user_confirmed_password">Confirm Password</label><br>
+                <input type="password" id="user_confirmed_password" name="user_confirmed_password"> 
+            </div>
+            <div>
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+        <style>
+            input:focus:invalid {
+                border: 2px red;
+            }
+        </style>
+    </div>
+    <footer>
+        <a href="https://www.google.com">Google</a>
+        <a href="https://www.yahoo.com">Yahoo</a>
+        <a href="https://www.spotify.com">Spotify</a>
+    </footer>
+</body>
+</html>
